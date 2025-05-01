@@ -8,7 +8,7 @@ const UsernamePage = () => {
 
   return (
     <div>
-      <h1>This is {query.username}'s dynamic routing page</h1>
+      <h1>This is {query.username} dynamic routing page</h1>
     </div>
   )
 }
