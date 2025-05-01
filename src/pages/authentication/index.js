@@ -1,7 +1,7 @@
 import React from 'react'
 import {useSession, signIn, signOut} from "next-auth/react"
 
-function authentication() {
+function Authentication() {
     const session = useSession()
 
     if(session.data===null){
@@ -15,5 +15,5 @@ function authentication() {
   )
 }
 
-export default authentication
+export default Authentication
 

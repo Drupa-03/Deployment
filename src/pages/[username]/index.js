@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-const setting = () => {
+const Setting = () => {
   const router = useRouter()
   
 
@@ -19,4 +19,4 @@ const setting = () => {
   )
 }
 
-export default setting
+export default Setting

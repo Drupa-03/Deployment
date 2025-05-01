@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index() {
+function Index() {
   return (
     <div>
       <h1>this is hello index.js</h1>
@@ -8,4 +8,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

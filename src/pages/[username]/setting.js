@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-const settingComponent = () => {
+const SettingComponent = () => {
   const router = useRouter()
   
 
