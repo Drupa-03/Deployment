@@ -13,9 +13,9 @@ function Footer() {
           {/* Left column - logo and social icons */}
           <div className="w-full lg:w-2/5">
             <div className="px-2 sm:px-32 py-6 sm:py-20 flex flex-col items-left sm:items-start">
-              <a>
+              {/* <a>
                 <img alt="azziptech logo" src="/image/logo.png" loading="lazy" width="150" height="80" className="w-auto h-8 sm:h-10 md:h-12" />
-              </a>
+              </a> */}
               <a>
                 <p className="max-w-sm mt-2 font-semibold text-black dark:text-gray-400 text-center sm:text-left">
                   Do not forgot us to follow on social media..!!
