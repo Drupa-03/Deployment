@@ -8,10 +8,10 @@ const SettingComponent = () => {
 
   return (
     <div>
-      <h1>This is {router.query.username} setting page</h1>
+      <h1>Welcome, {router.query.username}</h1>
       <button onClick={e=>router.push("/")}>Go to home</button>
     </div>
   )
 }
 
-export default settingComponent
+export default SettingComponent

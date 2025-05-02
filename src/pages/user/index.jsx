@@ -36,11 +36,14 @@
 
 import Link from "next/link";
 import useSWR from "swr";
+import { usePathname } from "next/navigation";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const UserPage = () => {
   const { data, error } = useSWR("https://dummyjson.com/users", fetcher);
+
+  const pathname = usePathname()
 
   if (error) {
     return <h1>Error happened!</h1>;
@@ -53,11 +56,13 @@ const UserPage = () => {
   return (
     <div>
       <h1 className="font-bold text-2xl text-center">Client side rendering</h1>
+      <div className="font-bold text-2xl text-center">path:{pathname}</div>
       {data.users.map((user) => (
         <Link href={`/user/${user.id}`} key={user.id}>
           <div className="mt-5">{user.firstName}</div>
         </Link>
       ))}
+      
     </div>
   );
 };
